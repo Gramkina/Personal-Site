@@ -1,0 +1,79 @@
+.title-page-line{
+    height: 2px;
+    background: linear-gradient(270deg, #8C40C8 0%, #C84040 100%);
+    border: none;
+}
+.title-page-name{
+    font-size: 30px;
+    color: #F3F3F3;
+    margin-left: 10%;
+}
+.title-page{
+    margin: 3% 0 0 7%;
+    width: 20%;
+}
+.repos{
+    width: 80%;
+    display: flex;
+    margin: 3% auto auto auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.repo{
+    width: 46%;
+    height: 23vh;
+    background: #353535;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 20px 40px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 3%;
+}
+.repo-preview-img{
+    border-radius: 12px;
+    border: 2px #B4B4B4 solid;
+    width: 25%;
+}
+.repo-info{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+    width: 60%;
+}
+.repo-name{
+    color: #F6F6F6;
+    font-size: 20px;
+}
+.repo-desc{
+    font-size: 15px;
+    color: #DFDFDF;
+}
+.repo-go-to{
+    margin-top: 3%;
+    background: linear-gradient(180deg, #5497BC 0%, #3B47B2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: flex;
+    align-items: center;
+}
+.repo-go-to img{
+    margin-right: 2%;
+}
+.language-line{
+    display: flex;
+    width: 60%;
+}
+.languages-name{
+    display: flex;
+    margin-top: 3%;
+}
+.languages-name div{
+    background: #3E3E3E;
+    padding: 3px 10px;
+    margin-right: 2%;
+    font-size: 14px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+}

@@ -1,0 +1,107 @@
+main{
+    display: flex;
+    height: 93vh;
+}
+.author-preview{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 17%;
+    margin-left: 5%;
+}
+.contact{
+    width: 15%;
+    margin: 4% 0 0 2%;
+    transform: scale(1);
+    transition: 0.3s;
+    user-select: none;
+}
+.contact:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+.author-name{
+    color: #E0E0E0;
+    line-height: 1;
+    font-size: 50px;
+}
+.author-profession{
+    font-size: 36px;
+}
+.ellipse1, .ellipse2, .ellipse3{
+    animation: rotation-right 15s infinite linear;
+    position: fixed;
+    width: 50%;
+    height: 50%;
+    z-index: -1;
+    user-select: none;
+}
+.ellipse2{
+    animation: rotation-left 11s infinite linear;
+    width: 60%;
+    height: 60%;
+}
+.ellipse3{
+    animation: rotation-right 19s infinite linear;
+    width: 70%;
+    height: 70%;
+}
+@keyframes rotation-right {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+@keyframes rotation-left {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(-360deg);
+    }
+}
+.quad:before {
+    content: "";
+    padding-top: 100%;
+}
+.card{
+    position: relative;
+    color: #F3F3F3;
+    height: 40%;
+}
+.card object{
+    height: 100%;
+    pointer-events: none;
+}
+.card_title, .card_desc{
+    font-size: 30px;
+    position: absolute;
+    top: 17%;
+    left: 20%;
+}
+.card_desc{
+    font-size: 20px;
+    top: 45%;
+    left: 13%;
+    width: 40%;
+}
+.php-card{
+    top: 3%;
+    left: 20%;
+}
+.frameworks-card{
+    top: 35%;
+    left: 27%;
+}
+.projects-card{
+    top: 55%;
+    left: -25%;
+    transition: 0.3s;
+    display: inline-block;
+}
+.projects-card:hover{
+    transform: scale(1.05);
+    transition: 0.3s;
+}
